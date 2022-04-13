@@ -1,0 +1,19 @@
+3.	编写程序，定义基类Staff，含：
+•	私有数据成员id(工号 int) , name(姓名string)。
+•	公有成员函数input()实现输入id和name数据。
+从基类公有继承派生类Engineer, 含：
+•	私有数据成员salary(薪水，float)。
+•	公有成员函数input()实现输入salary数据，平通过调用Staff基类的input()函数输入id和name数据。
+•	display()实现显示id、name、salary信息。
+编写main()主程序，测试以上函数。以下是main()程序运行界面：
+
+————————————————————————————————————
+| 请输入   id: 1234                  
+| 请输入 name: 张三                  
+| 请输入 salary: 10000
+|
+| Enginner的成员变量为:
+|       id: 1234
+|      name: 张三
+|    salary: 10000
+————————————————————————————————————
