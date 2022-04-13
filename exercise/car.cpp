@@ -12,7 +12,7 @@ public:
 	// 构造函数
 	Car(string brand, string model, int year);
 
-	void display(string brand, string model, int year);
+	void display();
 };
 
 Car::Car(string brand, string model, int year) 
@@ -20,7 +20,7 @@ Car::Car(string brand, string model, int year)
 	cout << "该汽车的信息是：" << endl;
 }
 
-void Car::display(string brand, string model, int year) {
+void Car::display() {
 	cout << "汽车品牌： " << brand << endl;
 	cout << "汽车模型： " << model << endl;
 	cout << "生产年份： " << year << endl;
@@ -28,6 +28,6 @@ void Car::display(string brand, string model, int year) {
 
 int main() {
 	Car car("比亚迪", "SUV", 2020);
-	car.display("比亚迪", "SUV", 2020);
+	car.display();
 	return 0;
 }
