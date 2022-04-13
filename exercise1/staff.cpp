@@ -14,27 +14,29 @@ private:
 
 class Engineer :public Staff {
 public:
-	void input(int id, string name, float salary);
+	void input();
 	void display();
 	float getSalary() const { return salary; }
 private:
 	float salary;
 };
 
-void Staff::input(int id, string name) {
-	cout << "请输入id： " << id;
+void Staff::input() {
+	cout << "请输入id： ";
 	cin >> id;
-	cout << "请输入name： " << name;
+	cout << "请输入name： ";
 	cin >> name;
 }
 
-void Engineer::input(int id, string name, float salary) {
-	cout << "请输入salary： " << salary;
+void Engineer::input() {
+	Staff::input();
+	cout << "请输入salary： ";
 	cin >> salary;
+	cout << endl;
 }
 
 void Engineer::display() {
-	cout << "Enginner的成员变量为: " << endl;
+	cout << "Engineer的成员变量为: " << endl;
 	cout << "id: " << getID() << endl;
 	cout << "name: " << getName() << endl;
 	cout << "salary: " << getSalary() << endl;
